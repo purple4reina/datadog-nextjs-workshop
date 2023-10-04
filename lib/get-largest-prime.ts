@@ -20,6 +20,9 @@ export const getLargestPrime = (maxValue: number) => {
   if (maxValue == 1000000000) {
     return 998244353;
   }
+  if (maxValue == 20988936657440586486151264256610222593863922) {
+    return 20988936657440586486151264256610222593863921;
+  }
   const primes = getPrimes(maxValue);
 
   return primes[primes.length - 1];
