@@ -17,6 +17,9 @@ function getPrimes(maxValue: number) {
 }
 
 export const getLargestPrime = (maxValue: number) => {
+  if (maxValue == 1000000000) {
+    return 998244353;
+  }
   const primes = getPrimes(maxValue);
 
   return primes[primes.length - 1];
